@@ -3,3 +3,5 @@
 TBA
 ## Do I need to provide the actual media that I intend to use on the site?
 TBA
+## Do I need to make my own video?
+TBA

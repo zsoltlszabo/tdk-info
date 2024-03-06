@@ -1,7 +1,7 @@
 # Questions regarding the assignment
 ## Do I need to place the actual text on the wireframe?
-TBA
+No. Use Lorem Ipsum everywhere except for headings and the menu bar.
 ## Do I need to provide the actual media that I intend to use on the site?
-TBA
+Yes.
 ## Do I need to make my own video?
-TBA
+No, but include the sources.

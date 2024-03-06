@@ -10,12 +10,12 @@
 - **contact.html**: the contact form
 ## Contact form
 - name (text)
-- I want to receive a reply (checkbox)
-- email (text, only if the above checkbox is ticked)
+- email
 - type of message (radio):
   - opinion
   - report a mistake
   - other: (text)
+- sign up for newsletter (checkbox)
 - submit / reset
 # Menu bar
 - Homepage

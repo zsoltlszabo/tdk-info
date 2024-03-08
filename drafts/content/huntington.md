@@ -116,3 +116,17 @@ $$
 \frac{1}{2 \cdot \frac{a(a+1)}{2a+1}}
 $$
 With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:harmonic_multiplier}.
+
+## Composition of the US House
+The following table shows the apportionment results using the 2020 census data for the three methods previously described.
+
+![Table showing the apportionment results using the 2020 census data for the three methods previously described](tables/us_composition.png)
+
+## Sources
+[Hun21] 	E. V. Huntington, A new method of apportionment of representatives, Quarterly Publications of the American Statistical Association 17 (1921), no. 135, 859–870. 
+
+[Hun28] 	E. V. Huntington, The apportionment of representatives in Congress, Trans. Amer. Math. Soc. 30 (1928), no. 1, 85–110. MR 1501423 
+
+[Sul72] 	J. J. Sullivan, The election of a president, The Mathematics Teacher 65 (1972), no. 6, 493–501. 
+
+[Sul82] 	J. J. Sullivan, Apportionment—a decennial problem, The Mathematics Teacher 75 (1982), no. 1, 20–25. 

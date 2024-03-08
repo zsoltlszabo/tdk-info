@@ -29,6 +29,8 @@ The equivalent document of the US Constitution for the European Union which esta
 The Treaty also requires any apportionment method to adhere to the principle of degressive proportionality. The guidelines for the current method of apportionment were described in the Cambridge compromise, which was finalised at the Cambridge Apportionment Meeting (CAM). (see \cite[Page1]{Grimmett2012}, \cite{Grimmett2017})
 
 ### The system
+![The electoral map for the 2019 European Parliament elections showing how each member state voted and the composition of the Parliament ](img/electoral_map_eu.svg)
+
 Degressive proportionality means "the ratio between the population and the number of seats of each Member State must vary in relation to their respective populations in such a way that each Member from a more populous Member State represents more citizens than each Member from a less populous Member State and conversely, but also that no less populous Member State has more seats than a more populous Member State." (this is known as the Lamassoure-Severin definition, see \cite[Page 2]{Grimmett2012})
 
 The following requirements were devised at the Cambridge Apportionment Meeting:

@@ -23,6 +23,7 @@ At the conference, I received positive reviews of my paper and my presentation. 
 
 #### National Conference of Students' Research Societies
 ![A picture of the author presenting the work at the National Conference of Students' Research Societies](img/otdk.jpg)
+![A picture of the author with the certificate awarded by the Mayor of Tatabánya](img/award.jpg)
 
 The second presentation was held at the University of Pannonia in Veszprém, Hungary. This university was the host of the 36th National Conference of Students' Research Societies in the Physics, Earth Sciences and Mathematics section. I was assigned to the Operations research subsection. I was the only high school student competing in the section, where the other contestants were mainly graduate students. The jury gave me encouraging comments about continuing my research.
 

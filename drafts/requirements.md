@@ -12,11 +12,11 @@
 # Requirements for the content
 ## To-do
 ## In progress
+## Complete
 - the content for at least 4 pages has been written
   - it should be clear which text is meant for which site
   - every page has the correct content
   - the content is sufficient
-## Complete
 - the images have been placed
 - the form has been placed and meets the following criteria:
   - contains at least 1 text box

@@ -21,5 +21,5 @@ We can also see that a larger number of states reached 96 seats. These states we
 Another significant statement that we can make after looking the data is that the medium-sized states were the biggest losers of our system. They lost seats at the expense of larger states. 
 ![The compositon of the European Parliament keeping degressive proportionality](tables/w_deg_prop.png)
 
-## Sources
+## References
 [Gri12] 	G. R. Grimmett, European apportionment via the cambridge compromise, Mathematical Social Sciences 63 (2012), no. 2, 68–73, Around the Cambridge Compromise: Apportionment in Theory and Practice. 

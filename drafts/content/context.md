@@ -60,3 +60,9 @@ $$
 We shall assign the seat share $A_d (p)$ to the member state with population $p$. After that, we need to round this to an integer, and adjust the divisor $d$, so that the sum of the seat numbers equals the desired Parliament size. 
 
 The Cambridge Apportionment Meeting recommended the use of base $b = 5$, and the use of upwards rounding.
+
+## References
+[Gri12] 	G. R. Grimmett, European apportionment via the cambridge compromise, Mathematical Social Sciences 63 (2012), no. 2, 68–73, Around the Cambridge Compromise: Apportionment in Theory and Practice. 
+
+[Gri17] 	G. Grimmett, F. Pukelsheim, V. R. González, W. Słomczyński, K. 
+Życzkowski, The Composition of the European Parliament, (2017) 

@@ -122,7 +122,7 @@ The following table shows the apportionment results using the 2020 census data f
 
 ![Table showing the apportionment results using the 2020 census data for the three methods previously described](tables/us_composition.png)
 
-## Sources
+## References
 [Hun21] 	E. V. Huntington, A new method of apportionment of representatives, Quarterly Publications of the American Statistical Association 17 (1921), no. 135, 859–870. 
 
 [Hun28] 	E. V. Huntington, The apportionment of representatives in Congress, Trans. Amer. Math. Soc. 30 (1928), no. 1, 85–110. MR 1501423 

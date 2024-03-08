@@ -22,9 +22,11 @@ The conference was held on November 17, 2022 in Building H of the Budapest Unive
 At the conference, I received positive reviews of my paper and my presentation. The jury awarded me second place and offered me the opportionity to present my findings at the national conference.
 
 #### National Conference of Students' Research Societies
+![A picture of the author presenting the work at the National Conference of Students' Research Societies](img/otdk.jpg)
 The second presentation was held at the University of Pannonia in Veszprém, Hungary. This university was the host of the 36th National Conference of Students' Research Societies in the Physics, Earth Sciences and Mathematics section. I was assigned to the Operations research subsection. I was the only high school student competing in the section, where the other contestants were mainly graduate students. The jury gave me encouraging comments about continuing my research.
 
 ## About the author
+![A portrait of the author](img/portrait.jpeg)
 My name is Zsolt Szabó. I am currently a first-year Computer Science student at the Faculty of Informatics of Eötvös Lóránd University, Budapest. 
 
 I started my research project as a high school student. I went to Árpád High School in my hometown of Tatabánya where I studied from 2017 to 2023. I completed my high school leaving exam there as well, where I received an award for achieving the highest scores of the school.
@@ -32,6 +34,8 @@ I started my research project as a high school student. I went to Árpád High S
 During my high school years, I participated in many competitions in my fields of interest. I competed on the national level a few times, most notably achieving 15th? place at the National Competition for High School Students in Computer Science, which is the most prestigious high school competition in Hungary.
 
 My main academic interests are Computer Science and Mathematics, but I am interested in many other topics such as politics, modern history and international relations as well, which is one of the reasons why I chose this research topic. I am glad that I have the opportunity to research a subject where I can use both my mathematical and my political interests.
+
+In 2023, I was awarded the title of the most successful high school student by the Mayor of Tatabánya.
 
 ## The future of the research
 This website is about the paper that I originally presented at the National Conference of Students' Research Societies, however I wish to continue my research beyond my findings in this paper. Currently, I have two main directions that I would like to continue my research in.

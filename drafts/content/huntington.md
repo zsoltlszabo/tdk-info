@@ -12,7 +12,8 @@ As it would be basically impossible to satisfy this equation in a representative
 
 ## The absolute difference and the relative difference
 A crucial question in developing the system was whether to use the absolute or the relative difference for the apportionment process. For example, if there are two districts, one with a population of 1,000 and another one with 1,001 people, the absolute difference here is 1, and the relative difference is 0.1\%, but if two districts have a population of 10 and 11, the absolute difference would still be 1, but the relative difference would be 10\%. Due to this reason, Huntington recommended the use of the relative difference instead of the absolute one. We can achieve the relative difference between states $A$ and $B$ by calculating $\frac{\frac{A}{a}-\frac{B}{b}}{\frac{B}{b}}$.
-\subsubsection{The first test for the method of equal proportions}
+
+## The first test for the method of equal proportions
 Huntington defined the first test for his method (known as the method of equal proportions or the method of the geometric mean, which we will be abbreviating as MGM) as follows (see \cite[Page 3]{Huntington1928}) :
 
 "If the relative difference between the congressional districts, $\frac{A}{a}$ and $\frac{B}{b}$, belonging to any two states can be reduced by a transfer of a representative from one state to the other, then this transfer should be made."
@@ -29,7 +30,7 @@ $$
 \frac{A^2}{a \left( a + 1 \right) } < \frac{B^2}{b \left( b + 1 \right) } \Rightarrow \nonumber \\
 \frac{A}{\sqrt{a \left( a + 1 \right) }} < \frac{B}{\sqrt{b \left( b + 1 \right) }}
 $$
-\subsubsection{The second test for the method of equal proportions}
+## The second test for the method of equal proportions
 This is similar to the first one, but instead of the ratio $\frac{A}{a}$, it uses $\frac{a}{A}$. Here, we divide the number of representatives by the population. We can think of this as the "individual share" each person living in the state gets of the representative. In perfect apportionment, the equality would look like this:
 $$
     \frac{a}{A} = \frac{b}{B}

@@ -9,6 +9,12 @@ The keyword when looking at the history American electoral system is "compromise
 
 The method for electing the executive is derived from the method for electing the legislature. The President is not directly elected by the people, rather by the Electoral College. According to this system, each state is assigned a certain number of electors, who will vote according to the will of the voters. Each state is assigned the same number of electors as seats in the Congress (representatives + senators). Most states award all of their electors to the candidate who received the most votes in their state. To win the election, a candidate needs the votes of a majority of all electors.
 
+#### Video
+I think this video by the National Geographic is great if you want to learn more about the history of the Electoral College.
+
+[![Link to video](https://img.youtube.com/vi/Q1zmbVcMiEM/0.jpg)](https://www.youtube.com/watch?v=Q1zmbVcMiEM)
+
+
 ### European Union
 The President of the European Commission is the most powerful official in the European Union. This position is comparable to prime ministers in parliamentary democracies or presidents in presidential republics.
 

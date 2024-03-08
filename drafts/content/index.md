@@ -23,10 +23,12 @@ At the conference, I received positive reviews of my paper and my presentation. 
 
 #### National Conference of Students' Research Societies
 ![A picture of the author presenting the work at the National Conference of Students' Research Societies](img/otdk.jpg)
+
 The second presentation was held at the University of Pannonia in Veszprém, Hungary. This university was the host of the 36th National Conference of Students' Research Societies in the Physics, Earth Sciences and Mathematics section. I was assigned to the Operations research subsection. I was the only high school student competing in the section, where the other contestants were mainly graduate students. The jury gave me encouraging comments about continuing my research.
 
 ## About the author
 ![A portrait of the author](img/portrait.jpeg)
+
 My name is Zsolt Szabó. I am currently a first-year Computer Science student at the Faculty of Informatics of Eötvös Lóránd University, Budapest. 
 
 I started my research project as a high school student. I went to Árpád High School in my hometown of Tatabánya where I studied from 2017 to 2023. I completed my high school leaving exam there as well, where I received an award for achieving the highest scores of the school.

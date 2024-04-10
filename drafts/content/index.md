@@ -17,6 +17,7 @@ My work was presented at two conferences.
 
 #### Budapest University of Technology and Economics
 My first presentation was at the students' scientific conference of the Budapest Technology and Economics Faculty of Natural Sciences. There, I competed against fellow high school students who presented their findings in a wide range of topics in the fields of mathematics and physics.
+
 The conference was held on November 17, 2022 in Building H of the Budapest University of Technology and Economics.
 
 At the conference, I received positive reviews of my paper and my presentation. The jury awarded me second place and offered me the opportionity to present my findings at the national conference.

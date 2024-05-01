@@ -1,0 +1,34 @@
+/*
+    Colour scheme: https://coolors.co/bcabae-0f0f0f-2d2e2e-716969-fbfbfb
+*/
+
+body {
+    background-color: #BCABAE;
+}
+
+.navbar {
+    background-color: #0F0F0F;
+}
+
+h1 {
+    font-weight: 10000;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #2D2E2E;
+    color: #FBFBFB;
+}
+
+img {
+    height: 20em;
+}
+
+.block1 {
+    background-color: #BCABAE;
+    padding: 30px;
+}
+
+.block2 {
+    padding: 30px;
+    background-color: #716969;
+}

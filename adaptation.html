@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Adaptation - TDK Info
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a href="#content" class="visually-hidden-focusable">Jump to content</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="text-white navbar-brand" href="index.html">TDK Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="text-white nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="text-white nav-link" href="context.html">Context</a>
+                    <a class="text-white nav-link" href="huntington.html">Huntington method</a>
+                    <a class="text-white nav-link" href="adaptation.html">Adaptation</a>
+                    <a class="text-white nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <h1>
+            Adaptation of the Huntington method for the European Union
+        </h1>
+        <div class="block1">
+            <p>There are two approaches we can take when adapting Huntington's method. </p>
+
+            <p>The first is to completely ignore the principle of degressive proportionality and give every state near
+                equal representation in the European Parliament. Taking this approach would lead us to a Parliament
+                which looks more like the US House of Representatives. </p>
+
+            <p>The second approach is to keep the principle of degressive proportionality but grant every member state
+                an m minimum number of seats, and allocate the remaining seats using Huntington's method subject to a
+                maximum of 96 seats. After a member state reaches 96 seats, it shall be assigned no more seats. These
+                guidelines were established [Gri12, Page 3]. </p>
+            <h2>Ignoring degressive proportionality</h2>
+            <p>If we wish to ignore the principle of degressive proportionality, we will get a result, where every
+                member state has roughly equal representation. This will give us a result that gives the more populous
+                member states (such as Germany and France) a lot more power when compared to the current system. The
+                results, if we applied the different methods using the Python program, can be found in the following
+                table: </p>
+            TABLE
+            <p>When comparing the apportionment data between the three methods, we can only see a difference in the case
+                of two states. The method of the arithmetic mean assigns one seat fewer to Cyprus, and one more to
+                Germany than the other two methods. Cyprus is one of the least populous states in the European Union,
+                and Germany is the most populous. This also highlights that the method of the arithmetic mean favours
+                larger states over smaller states. </p>
+            <p>As we no longer use the principle of degressive proportionality, we can see the effects of the removal of
+                the cap on the number of representatives. Germany and France have crossed the 96 seat-threshold
+                currently used during apportionment, with Italy coming close at 95 seats. </p>
+            <p>The minimum number of seats assigned to a state has also been lowered to one. This also causes
+                significant differences and gives less power to the smaller states. </p>
+            <p>From these results, it is clear why the principle of degressive proportionality is crucial in the balance
+                between the power of a member state, and the power of the people living in the European Union. Using
+                this system, the four most populous states alone would have a sizeable 402-seat (or 403-seat) majority.
+            </p>
+
+        </div>
+        <div class="block2">
+            <h2>Keeping degressive proportionality</h2>
+            <p>We will use a version of the Python code modified according to the guidelines in [Gri12, Page 3]. The
+                code along with a full, line-by-line explanation can be found in section 4.2. Using census data from
+                2011 from across the European Union, we have arrived at the following composition using the different
+                methods (see the table below). </p>
+            <p>Using this data, we can see that all three methods generated the same results. When analysing the
+                difference between our apportionment and the official apportionment, we can notice a few major
+                differences. </p>
+            <p>As this simulation respects degressive proportionality, we can say that the least populous member states
+                benefited greatly from this apportionment. We also see that there are more states with the minimum
+                number of seats than under the current system. </p>
+            <p>The only member state that reached the maximum of 96 seats under the current system is Germany. Germany
+                reached this threshold under our system as well, making Germany less represented than the smaller
+                states. </p>
+            <p>We can also see that a larger number of states reached 96 seats. These states were already populous, so
+                we can say that this system benefits the larger states as well. </p>
+            <p>Another significant statement that we can make after looking the data is that the medium-sized states
+                were the biggest losers of our system. They lost seats at the expense of larger states. </p>
+            table!!!!
+        </div>
+        <div class="block1">
+            <h2>References</h2>
+            <p id="Gri12">[Gri12] <cite>G. R. Grimmett, European apportionment via the cambridge compromise,
+                    Mathematical Social Sciences 63 (2012), no. 2, 68–73, Around the Cambridge Compromise: Apportionment
+                    in Theory and Practice. </cite></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -41,3 +41,9 @@ img {
 .btn {
     margin: 10px;
 }
+
+.navbar-toggler-icon {
+    background-color: #716969;
+    border: 2px solid #2D2E2E;
+    border-radius: 5px;
+}

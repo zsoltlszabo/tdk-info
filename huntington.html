@@ -100,7 +100,9 @@
             belonging to any two states, can be reduced by a transfer of a representative from one state to the
             other, then this transfer should be made."
 
-            We can see that the equality in \eqref{E:second_test} is the reciprocal of the one in \eqref{E:requirement}. If we perform transformations as seen in \eqref{E:transform_first_test}, we will arrive at the following inequality (which is also the reciprocal of the one in \eqref{E:transform_first_test}):
+            We can see that the equality in \eqref{E:second_test} is the reciprocal of the one in \eqref{E:requirement}.
+            If we perform transformations as seen in \eqref{E:transform_first_test}, we will arrive at the following
+            inequality (which is also the reciprocal of the one in \eqref{E:transform_first_test}):
             $$
             \frac{\sqrt{a \left( a + 1 \right) }}{A} &lt; \frac{\sqrt{b \left( b + 1 \right) }}{B}
             $$
@@ -109,7 +111,8 @@
             $$
             \frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }}
             $$
-            As we are dividing the population of a state, we can interpret it as multiplying the population of state $A$ by the following fraction:
+            As we are dividing the population of a state, we can interpret it as multiplying the population of state $A$
+            by the following fraction:
             $$
             \frac{1}{\sqrt{a \left( a + 1 \right)}}
             $$
@@ -120,22 +123,36 @@
                 <li>$A$: the population of state $A$</li>
                 <li>$a$: the number of representatives assigned to state $A$</li>
             </ul>
-            The first thing we need to do is to write down each state, its population and the number of representatives assigned to it. At the start, each state will be assigned one representative. Now we see that we need to perform the procedure $n-r$ times.
+            The first thing we need to do is to write down each state, its population and the number of representatives
+            assigned to it. At the start, each state will be assigned one representative. Now we see that we need to
+            perform the procedure $n-r$ times.
             Every time we assign a representative, we need to multiply the population of each state by
             $$
             \frac{1}{\sqrt{a \left( a + 1 \right) }} \text{,}
             $$
-            where $a$ will be the number of representatives the state currently holds (after each iteration). The state that will be assigned the representative will be the state with the highest population after performing the multiplication.
+            where $a$ will be the number of representatives the state currently holds (after each iteration). The state
+            that will be assigned the representative will be the state with the highest population after performing the
+            multiplication.
             <h2>Alternative methods for apportionment</h2>
-            We can achieve alternative methods for apportionment by slightly modifying the tests defined by Huntington for the method of the geometric mean. By using the absolute difference instead of the relative difference, we can arrive at the method of the harmonic mean and the method of the arithmetic mean. These methods have been described in <a href="#Hun21">[Hun21]</a>, <a href="#Hun28">[Hun28]</a> and <a href="#Sul72">[Sul72]</a>.
+            We can achieve alternative methods for apportionment by slightly modifying the tests defined by Huntington
+            for the method of the geometric mean. By using the absolute difference instead of the relative difference,
+            we can arrive at the method of the harmonic mean and the method of the arithmetic mean. These methods have
+            been described in <a href="#Hun21">[Hun21]</a>, <a href="#Hun28">[Hun28]</a> and <a
+                href="#Sul72">[Sul72]</a>.
             <h3>Method of the arithmetic mean</h3>
-            We can achieve the method of the arithmetic mean (which we will be abbreviating as MAM) by taking the absolute difference between the individual shares of two states. Huntington defined the test for the method of the arithmetic mean (or the method of major fractions) as follows (see \cite[Page 7]{Huntington1928}):
-            <blockquote>"If the absolute difference between the two "individual shares", $\frac{a}{A}$ and $\frac{b}{B}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made (except that no state shall be left without at least one representative)."</blockquote>
+            We can achieve the method of the arithmetic mean (which we will be abbreviating as MAM) by taking the
+            absolute difference between the individual shares of two states. Huntington defined the test for the method
+            of the arithmetic mean (or the method of major fractions) as follows (see \cite[Page 7]{Huntington1928}):
+            <blockquote>"If the absolute difference between the two "individual shares", $\frac{a}{A}$ and
+                $\frac{b}{B}$, can be reduced by a transfer of a representative from one state to the other, then this
+                transfer should be made (except that no state shall be left without at least one representative)."
+            </blockquote>
             We can write the following inequality using this test (using the same notations as before):
             $$
             \frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A}
             $$
-            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
+            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like
+            so:
 
             $$\frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A} \Rightarrow $$
             $$\frac{a + 1}{A} + \frac{a}{A} &lt; \frac{b + 1}{B} + \frac{b}{B} \Rightarrow $$
@@ -146,27 +163,38 @@
             $$\frac{A}{2a+1} > \frac{B}{2b+1} \Rightarrow$$
             $$\frac{A}{a + \frac{1}{2}} > \frac{B}{b + \frac{1}{2}}$$
 
-            From this result, we can see that the multiplier for state $A$ for the method of the arithmetic mean will be:
+            From this result, we can see that the multiplier for state $A$ for the method of the arithmetic mean will
+            be:
             $$
             \frac{1}{a + \frac{1}{2}}
             $$
-            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:arithmetic_multiplier}. 
+            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the
+            method of the geometric mean. We need to perform the same procedure as we did for the method of equal
+            proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall
+            use \eqref{E:arithmetic_multiplier}.
             <h3>Method of the harmonic mean</h3>
-            We can achieve the method of the harmonic mean (which we will be abbreviating as MHM) by taking the absolute difference between the population of two districts. Huntington defined the test for the method of the harmonic mean as follows (see \cite[Page 7]{Huntington1928}):
+            We can achieve the method of the harmonic mean (which we will be abbreviating as MHM) by taking the absolute
+            difference between the population of two districts. Huntington defined the test for the method of the
+            harmonic mean as follows (see \cite[Page 7]{Huntington1928}):
 
-            <blockquote>"If the absolute difference between the two congressional districts $\frac{A}{a}$ and $\frac{B}{b}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made."</blockquote>
+            <blockquote>"If the absolute difference between the two congressional districts $\frac{A}{a}$ and
+                $\frac{B}{b}$, can be reduced by a transfer of a representative from one state to the other, then this
+                transfer should be made."</blockquote>
 
             We can write the following inequality using this test (using the same notations as before):
             $$
             \frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a}
             $$
-            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
+            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like
+            so:
 
 
             $$\frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a} \Rightarrow$$
             $$\frac{A}{a+1} + \frac{A}{a} &lt; \frac{B}{b+1} + \frac{B}{b} \Rightarrow$$
-            $$A \left( \frac{1}{a+1} + \frac{1}{a} \right) &lt; B \left( \frac{1}{b+1} + \frac{1}{b} \right) \Rightarrow$$
-            $$A \left( \frac{a}{a(a+1)} + \frac{a+1}{a(a+1)} \right) &lt; B \left( \frac{b}{b(b+1)} + \frac{b+1}{b(b+1)} \right) \Rightarrow$$
+            $$A \left( \frac{1}{a+1} + \frac{1}{a} \right) &lt; B \left( \frac{1}{b+1} + \frac{1}{b} \right)
+            \Rightarrow$$
+            $$A \left( \frac{a}{a(a+1)} + \frac{a+1}{a(a+1)} \right) &lt; B \left( \frac{b}{b(b+1)} + \frac{b+1}{b(b+1)}
+            \right) \Rightarrow$$
             $$A \left( \frac{2a+1}{a(a+1)} \right) &lt; B \left( \frac{2b+1}{b(b+1)} \right) \Rightarrow$$
             $$\frac{A}{\frac{a(a+1)}{2a+1}} &lt; \frac{B}{\frac{b(b+1)}{2b+1}} \Rightarrow$$
             $$\frac{A}{2 \cdot \frac{a(a+1)}{2a+1}} &lt; \frac{B}{2 \cdot \frac{a(a+1)}{2b+1}}$$
@@ -176,10 +204,14 @@
             $$
             \frac{1}{2 \cdot \frac{a(a+1)}{2a+1}}
             $$
-            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:harmonic_multiplier}.
+            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the
+            method of the geometric mean. We need to perform the same procedure as we did for the method of equal
+            proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall
+            use \eqref{E:harmonic_multiplier}.
 
             <h2>Composition of the US House</h2>
-            The following table shows the apportionment results using the 2020 census data for the three methods previously described.
+            The following table shows the apportionment results using the 2020 census data for the three methods
+            previously described.
             US HOUSE TABLE!!!
         </div>
         <div class="block2">

@@ -57,3 +57,7 @@ footer {
     color: #FBFBFB;
     text-align: center;
 }
+
+.noncontainer {
+    margin: 20px;
+}

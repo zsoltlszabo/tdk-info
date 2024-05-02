@@ -49,3 +49,11 @@ img {
     border: 2px solid #2D2E2E;
     border-radius: 5px;
 }
+
+footer {
+    margin: 20px;
+    background-color: #0F0F0F;
+    padding: 20px;
+    color: #FBFBFB;
+    text-align: center;
+}

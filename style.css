@@ -32,3 +32,7 @@ img {
     padding: 30px;
     background-color: #716969;
 }
+
+.active {
+    font-weight: bolder;
+}

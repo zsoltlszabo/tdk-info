@@ -1,57 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      TITLE
+        The Huntington method
     </title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+</head>
+
+<body>
     <a href="#content" class="visually-hidden-focusable">Jump to content</a>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="text-white navbar-brand" href="index.html">TDK Info</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="text-white nav-link" aria-current="page" href="#">Home</a>
-            <a class="text-white nav-link" href="context.html">Context</a>
-            <a class="text-white nav-link active" href="huntington.html">Huntington method</a>
-            <a class="text-white nav-link" href="adaptation.html">Adaptation</a>
-            <a class="text-white nav-link" href="contact.html">Contact</a>
-          </div>
+        <div class="container-fluid">
+            <a class="text-white navbar-brand" href="index.html">TDK Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="text-white nav-link" aria-current="page" href="#">Home</a>
+                    <a class="text-white nav-link" href="context.html">Context</a>
+                    <a class="text-white nav-link active" href="huntington.html">Huntington method</a>
+                    <a class="text-white nav-link" href="adaptation.html">Adaptation</a>
+                    <a class="text-white nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div id="content">
-      <h1>
-        The Huntington method
-      </h1>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"
-        ></script>
-      </div>
+        <h1>
+            The Huntington method
+        </h1>
+        <div class="block1">
+            The current method of apportionment was developed by an American mathematician, Edward V. Huntington in the
+            early 20th century. The method was described in <a href="#Hun28">[Hun28]</a>, <a href="#Sul72">[Sul72]</a>
+            and <a href="#Sul82">[Sul82]</a>.
+            <h2>The requirements for the system</h2>
+            Huntington determined, that given two states, which have populations $A$ and $B$ respectively, have $a$ and
+            $b$
+            seats in the House, the perfect system would give a result where
+            $$
+            \frac{A}{a} = \frac{B}{b} \text{.}
+            $$
+            As it would be basically impossible to satisfy this equation in a representative democracy, Huntington's
+            goal was to make this inequality as small as possible.
+            <h2>The absolute difference and the relative difference</h2>
+            A crucial question in developing the system was whether to use the absolute or the relative difference for
+            the apportionment process. For example, if there are two districts, one with a population of 1,000 and
+            another one with 1,001 people, the absolute difference here is 1, and the relative difference is 0.1%, but
+            if two districts have a population of 10 and 11, the absolute difference would still be 1, but the relative
+            difference would be 10%. Due to this reason, Huntington recommended the use of the relative difference
+            instead of the absolute one. We can achieve the relative difference between states $A$ and $B$ by
+            calculating $\frac{\frac{A}{a}-\frac{B}{b}}{\frac{B}{b}}$.
+            <h2>The first test for the method of equal proportions</h2>
+            Huntington defined the first test for his method (known as the method of equal proportions or the method of
+            the geometric mean, which we will be abbreviating as MGM) as follows (see [Page 3, <a
+                href="#Hun28">Hun28</a>]) :
+            <blockquote>"If the relative difference between the congressional districts, $\frac{A}{a}$ and
+                $\frac{B}{b}$, belonging to any two states can be reduced by a transfer of a representative from one
+                state to the other, then this transfer should be made."</blockquote>
+            We can write the following "inequality" <i>(Please note that this is not a "real inequality". We are writing
+                this as an inequality to transform these fractions into the desired form.)</i> for the test:
+            $$
+            \frac{\frac{A}{a + 1} - \frac{B}{b}}{\frac{B}{b}} &lt; \frac{\frac{B}{b + 1} - \frac{A}{a}}{\frac{A}{a}} $$ We
+                rearrange this inequality to get the multiplier that can be used for successive applications of the
+                test: <i>(We know that the population of a state and the number of representatives assigned to it will
+                be a positive integer, so the direction of the inequality will not change, and we can take the square
+                root of these numbers on the set of real numbers.)</i>
+                $$\frac{\frac{A}{a + 1} - \frac{B}{b}}{\frac{B}{b}} &lt; \frac{\frac{B}{b + 1} - \frac{A}{a}}{\frac{A}{a}}
+                    \Rightarrow $$ $$\left( \frac{A}{a} \right) \left( \frac{A}{a + 1} - \frac{B}{b} \right) &lt; \left(
+                    \frac{B}{b} \right) \left( \frac{B}{b + 1} - \frac{A}{a} \right) \Rightarrow $$ $$\frac{A^2}{a\left(
+                    a+1\right) } - \frac{AB}{ab} &lt; \frac{B^2}{b \left( b+1 \right) } - \frac{AB}{ab} \Rightarrow $$
+                    $$\frac{A^2}{a \left( a + 1 \right) } &lt; \frac{B^2}{b \left( b + 1 \right) } \Rightarrow $$
+                    $$\frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }} $$ <h2>The
+                    second test for the method of equal proportions</h2>
+                    This is similar to the first one, but instead of the ratio $\frac{A}{a}$, it uses $\frac{a}{A}$.
+                    Here, we divide the number of representatives by the population. We can think of this as the
+                    "individual share" each person living in the state gets of the representative. In perfect
+                    apportionment, the equality would look like this:
+                    $$
+                    \frac{a}{A} = \frac{b}{B}
+                    $$
+            Huntington defined the second test as follows(see [Page 4, <a href="#Hun28">Hun28</a>]):
+            "If the relative difference between the two "individual shares", $\frac{a}{A}$ and $\frac{b}{B}$,
+            belonging to any two states, can be reduced by a transfer of a representative from one state to the
+            other, then this transfer should be made."
+
+        </div>
+        <div class="block2">
+            <h2>References</h2>
+            <p id="Hun21">[Hun21] <cite>E. V. Huntington, A new method of apportionment of representatives, Quarterly
+                    Publications of the American Statistical Association 17 (1921), no. 135, 859–870.</cite> </p>
+            <p id="Hun28">[Hun28] <cite>E. V. Huntington, The apportionment of representatives in Congress, Trans. Amer.
+                    Math. Soc. 30 (1928), no. 1, 85–110. MR 1501423</cite> </p>
+            <p id="Sul72">[Sul72] <cite>J. J. Sullivan, The election of a president, The Mathematics Teacher 65 (1972),
+                    no. 6, 493–501.</cite> </p>
+            <p id="Sul82">[Sul28] <cite>J. J. Sullivan, Apportionment—a decennial problem, The Mathematics Teacher 75
+                    (1982), no. 1, 20–25.</cite> </p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </div>
-  </body>
+</body>
+
 </html>

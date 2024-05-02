@@ -36,3 +36,7 @@ img {
 .active {
     font-weight: bolder;
 }
+
+.btn {
+    margin: 10px;
+}

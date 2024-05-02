@@ -51,6 +51,67 @@
             <p id="instructions">
                 If you have some questions about my research or you would like to share your opinion with me, I would be more than happy to hear from you. If you have found a mistake on this website, I would be very grateful if you could share it with me. You can use the contact form below to send me a message.
             </p>
+            <form action="mailto:qxbh47@inf.elte.hu" method="post" enctype="text/plain">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12 col-lg-2">
+                        <label for="field1"><strong>Name</strong></label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input class="w-100" type="text" name="name" id="field1" size="60">
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12 col-lg-2">
+                        <label for="field2"><strong>Email</strong></label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input class="w-100" type="text" name="email" id="field2" size="60">
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12 col-lg-2">
+                        <label for="question"><strong>Type of message</strong></label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="radio" name="typeofmessage" id="question" value="Question">
+						<label for="question">Question</label><br>
+						<input type="radio" name="typeofmessage" id="opinion" value="Opinion">
+						<label for="opinion">Opinion</label><br>
+						<input type="radio" name="typeofmessage" id="report" value="Reporting a mistake">
+						<label for="report">Reporting a mistake</label><br>
+                        <input type="radio" name="typeofmessage" id="other" value="Other">
+						<label for="other">Other</label>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12 col-lg-2">
+                        <label for="field4"><strong>Message</strong></label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <textarea class="w-100" cols="60" rows="10" name="message" id="field4"
+								placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+						<label for="newsletter">I would like to receive emails with further details about the research.</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
         </div>
       </div>
         <script

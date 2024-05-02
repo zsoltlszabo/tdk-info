@@ -86,8 +86,8 @@
             \frac{B}{b} \right) \left( \frac{B}{b + 1} - \frac{A}{a} \right) \Rightarrow $$ $$\frac{A^2}{a\left(
             a+1\right) } - \frac{AB}{ab} &lt; \frac{B^2}{b \left( b+1 \right) } - \frac{AB}{ab} \Rightarrow $$
             $$\frac{A^2}{a \left( a + 1 \right) } &lt; \frac{B^2}{b \left( b + 1 \right) } \Rightarrow $$
-            $$\frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }} $$ <h2>The
-                second test for the method of equal proportions</h2>
+            $$\frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }} $$
+            <h2>The second test for the method of equal proportions</h2>
             This is similar to the first one, but instead of the ratio $\frac{A}{a}$, it uses $\frac{a}{A}$.
             Here, we divide the number of representatives by the population. We can think of this as the
             "individual share" each person living in the state gets of the representative. In perfect
@@ -100,93 +100,87 @@
             belonging to any two states, can be reduced by a transfer of a representative from one state to the
             other, then this transfer should be made."
 
-
-
-
-            
             We can see that the equality in \eqref{E:second_test} is the reciprocal of the one in \eqref{E:requirement}. If we perform transformations as seen in \eqref{E:transform_first_test}, we will arrive at the following inequality (which is also the reciprocal of the one in \eqref{E:transform_first_test}):
-$$
-\frac{\sqrt{a \left( a + 1 \right) }}{A} &lt; \frac{\sqrt{b \left( b + 1 \right) }}{B}
-$$
-## Working rule for the method of equal proportions
-In \eqref{E:transform_first_test}, we transformed the inequality into the following:
-$$
-\frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }}
-$$
-As we are dividing the population of a state, we can interpret it as multiplying the population of state $A$ by the following fraction:
-$$
-\frac{1}{\sqrt{a \left( a + 1 \right)}}
-$$
-Let's start by writing down the notations we will be using:
-- $n$: the number of states
-- $r$: the number of representatives that we need to assign
-- $A$: the population of state $A$
-- $a$: the number of representatives assigned to state $A$
+            $$
+            \frac{\sqrt{a \left( a + 1 \right) }}{A} &lt; \frac{\sqrt{b \left( b + 1 \right) }}{B}
+            $$
+            ## Working rule for the method of equal proportions
+            In \eqref{E:transform_first_test}, we transformed the inequality into the following:
+            $$
+            \frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }}
+            $$
+            As we are dividing the population of a state, we can interpret it as multiplying the population of state $A$ by the following fraction:
+            $$
+            \frac{1}{\sqrt{a \left( a + 1 \right)}}
+            $$
+            Let's start by writing down the notations we will be using:
+            <ul>
+                <li>$n$: the number of states</li>
+                <li>$r$: the number of representatives that we need to assign</li>
+                <li>$A$: the population of state $A$</li>
+                <li>$a$: the number of representatives assigned to state $A$</li>
+            </ul>
+            The first thing we need to do is to write down each state, its population and the number of representatives assigned to it. At the start, each state will be assigned one representative. Now we see that we need to perform the procedure $n-r$ times.
+            Every time we assign a representative, we need to multiply the population of each state by
+            $$
+            \frac{1}{\sqrt{a \left( a + 1 \right) }} \text{,}
+            $$
+            where $a$ will be the number of representatives the state currently holds (after each iteration). The state that will be assigned the representative will be the state with the highest population after performing the multiplication.
+            <h2>Alternative methods for apportionment</h2>
+            We can achieve alternative methods for apportionment by slightly modifying the tests defined by Huntington for the method of the geometric mean. By using the absolute difference instead of the relative difference, we can arrive at the method of the harmonic mean and the method of the arithmetic mean. These methods have been described in <a href="#Hun21">[Hun21]</a>, <a href="#Hun28">[Hun28]</a> and <a href="#Sul72">[Sul72]</a>.
+            <h3>Method of the arithmetic mean</h3>
+            We can achieve the method of the arithmetic mean (which we will be abbreviating as MAM) by taking the absolute difference between the individual shares of two states. Huntington defined the test for the method of the arithmetic mean (or the method of major fractions) as follows (see \cite[Page 7]{Huntington1928}):
+            <blockquote>"If the absolute difference between the two "individual shares", $\frac{a}{A}$ and $\frac{b}{B}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made (except that no state shall be left without at least one representative)."</blockquote>
+            We can write the following inequality using this test (using the same notations as before):
+            $$
+            \frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A}
+            $$
+            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
 
-The first thing we need to do is to write down each state, its population and the number of representatives assigned to it. At the start, each state will be assigned one representative. Now we see that we need to perform the procedure $n-r$ times.
+            $$\frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A} \Rightarrow $$
+            $$\frac{a + 1}{A} + \frac{a}{A} &lt; \frac{b + 1}{B} + \frac{b}{B} \Rightarrow $$
+            $$\frac{2a + 1}{A} &lt; \frac{2b + 1}{B}$$
 
-Every time we assign a representative, we need to multiply the population of each state by
-$$
-\frac{1}{\sqrt{a \left( a + 1 \right) }} \text{,}
-$$
-where $a$ will be the number of representatives the state currently holds (after each iteration). The state that will be assigned the representative will be the state with the highest population after performing the multiplication.
-## Alternative methods for apportionment
+            Taking the reciprocals, we get:
 
-We can achieve alternative methods for apportionment by slightly modifying the tests defined by Huntington for the method of the geometric mean. By using the absolute difference instead of the relative difference, we can arrive at the method of the harmonic mean and the method of the arithmetic mean. These methods have been described in \cite{Huntington1928}, \cite{Huntington1928} and \cite{Sullivan1972}.
-### Method of the arithmetic mean
-We can achieve the method of the arithmetic mean (which we will be abbreviating as MAM) by taking the absolute difference between the individual shares of two states. Huntington defined the test for the method of the arithmetic mean (or the method of major fractions) as follows (see \cite[Page 7]{Huntington1928}):
+            $$\frac{A}{2a+1} > \frac{B}{2b+1} \Rightarrow$$
+            $$\frac{A}{a + \frac{1}{2}} > \frac{B}{b + \frac{1}{2}}$$
 
-"If the absolute difference between the two "individual shares", $\frac{a}{A}$ and $\frac{b}{B}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made (except that no state shall be left without at least one representative)."
+            From this result, we can see that the multiplier for state $A$ for the method of the arithmetic mean will be:
+            $$
+            \frac{1}{a + \frac{1}{2}}
+            $$
+            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:arithmetic_multiplier}. 
+            <h3>Method of the harmonic mean</h3>
+            We can achieve the method of the harmonic mean (which we will be abbreviating as MHM) by taking the absolute difference between the population of two districts. Huntington defined the test for the method of the harmonic mean as follows (see \cite[Page 7]{Huntington1928}):
 
-We can write the following inequality using this test (using the same notations as before):
-$$
-\frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A}
-$$
-To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
-$$
-\frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A} \Rightarrow \\
-\frac{a + 1}{A} + \frac{a}{A} &lt; \frac{b + 1}{B} + \frac{b}{B} \Rightarrow \\
-\frac{2a + 1}{A} &lt; \frac{2b + 1}{B}
-$$
-Taking the reciprocals, we get:
-$$
-\frac{A}{2a+1} > \frac{B}{2b+1} \Rightarrow \nonumber \\
-\frac{A}{a + \frac{1}{2}} > \frac{B}{b + \frac{1}{2}}
-$$
-From this result, we can see that the multiplier for state $A$ for the method of the arithmetic mean will be:
-$$
-\frac{1}{a + \frac{1}{2}}
-$$
-With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:arithmetic_multiplier}. 
-### Method of the harmonic mean
-We can achieve the method of the harmonic mean (which we will be abbreviating as MHM) by taking the absolute difference between the population of two districts. Huntington defined the test for the method of the harmonic mean as follows (see \cite[Page 7]{Huntington1928}):
+            <blockquote>"If the absolute difference between the two congressional districts $\frac{A}{a}$ and $\frac{B}{b}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made."</blockquote>
 
-"If the absolute difference between the two congressional districts $\frac{A}{a}$ and $\frac{B}{b}$, can be reduced by a transfer of a representative from one state to the other, then this transfer should be made."
+            We can write the following inequality using this test (using the same notations as before):
+            $$
+            \frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a}
+            $$
+            To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
 
-We can write the following inequality using this test (using the same notations as before):
-$$
-\frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a}
-$$
-To achieve the working rule for the method of the arithmetic mean, we need to transform the inequality like so:
-$$
-\frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a} \Rightarrow \nonumber \\
-\frac{A}{a+1} + \frac{A}{a} &lt; \frac{B}{b+1} + \frac{B}{b} \Rightarrow \nonumber \\
-A \left( \frac{1}{a+1} + \frac{1}{a} \right) &lt; B \left( \frac{1}{b+1} + \frac{1}{b} \right) \Rightarrow \nonumber \\
-A \left( \frac{a}{a(a+1)} + \frac{a+1}{a(a+1)} \right) &lt; B \left( \frac{b}{b(b+1)} + \frac{b+1}{b(b+1)} \right) \Rightarrow \nonumber \\
-A \left( \frac{2a+1}{a(a+1)} \right) &lt; B \left( \frac{2b+1}{b(b+1)} \right) \Rightarrow \nonumber \\
-\frac{A}{\frac{a(a+1)}{2a+1}} &lt; \frac{B}{\frac{b(b+1)}{2b+1}} \Rightarrow \nonumber \\
-\frac{A}{2 \cdot \frac{a(a+1)}{2a+1}} &lt; \frac{B}{2 \cdot \frac{a(a+1)}{2b+1}}
-$$
-From this result, we can see that the multiplier for state $A$ for the method of the harmonic mean will be:
-$$
-\frac{1}{2 \cdot \frac{a(a+1)}{2a+1}}
-$$
-With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:harmonic_multiplier}.
 
-## Composition of the US House
-The following table shows the apportionment results using the 2020 census data for the three methods previously described.
+            $$\frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a} \Rightarrow$$
+            $$\frac{A}{a+1} + \frac{A}{a} &lt; \frac{B}{b+1} + \frac{B}{b} \Rightarrow$$
+            $$A \left( \frac{1}{a+1} + \frac{1}{a} \right) &lt; B \left( \frac{1}{b+1} + \frac{1}{b} \right) \Rightarrow$$
+            $$A \left( \frac{a}{a(a+1)} + \frac{a+1}{a(a+1)} \right) &lt; B \left( \frac{b}{b(b+1)} + \frac{b+1}{b(b+1)} \right) \Rightarrow$$
+            $$A \left( \frac{2a+1}{a(a+1)} \right) &lt; B \left( \frac{2b+1}{b(b+1)} \right) \Rightarrow$$
+            $$\frac{A}{\frac{a(a+1)}{2a+1}} &lt; \frac{B}{\frac{b(b+1)}{2b+1}} \Rightarrow$$
+            $$\frac{A}{2 \cdot \frac{a(a+1)}{2a+1}} &lt; \frac{B}{2 \cdot \frac{a(a+1)}{2b+1}}$$
 
-![Table showing the apportionment results using the 2020 census data for the three methods previously described](tables/us_composition.png)
+
+            From this result, we can see that the multiplier for state $A$ for the method of the harmonic mean will be:
+            $$
+            \frac{1}{2 \cdot \frac{a(a+1)}{2a+1}}
+            $$
+            With this multiplier, we can arrive at the working rule for this method, which is similar to that of the method of the geometric mean. We need to perform the same procedure as we did for the method of equal proportions, with the only difference being the multiplier. Instead of using \eqref{E:multiplier}, we shall use \eqref{E:harmonic_multiplier}.
+
+            <h2>Composition of the US House</h2>
+            The following table shows the apportionment results using the 2020 census data for the three methods previously described.
+            US HOUSE TABLE!!!
         </div>
         <div class="block2">
             <h2>References</h2>
@@ -196,7 +190,7 @@ The following table shows the apportionment results using the 2020 census data f
                     Math. Soc. 30 (1928), no. 1, 85–110. MR 1501423</cite> </p>
             <p id="Sul72">[Sul72] <cite>J. J. Sullivan, The election of a president, The Mathematics Teacher 65 (1972),
                     no. 6, 493–501.</cite> </p>
-            <p id="Sul82">[Sul28] <cite>J. J. Sullivan, Apportionment—a decennial problem, The Mathematics Teacher 75
+            <p id="Sul82">[Sul82] <cite>J. J. Sullivan, Apportionment—a decennial problem, The Mathematics Teacher 75
                     (1982), no. 1, 20–25.</cite> </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

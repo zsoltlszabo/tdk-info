@@ -8,9 +8,6 @@ body {
     background-color: #BCABAE;
 }
 
-/*.navbar {
-    background-color: #0F0F0F;
-}*/
 
 h1 {
     font-weight: 1000;
@@ -125,19 +122,37 @@ figcaption {
     text-align: center;
 }
 
-a > i {
+#navlinks > a {
     color: white;
+    text-decoration: none;
     font-style: normal;
     margin: 5px;
 }
 
-footer > a a:active a:link a:hover {
-    color: #42b9f5;
+footer a, footer a:active, footer a:link, footer a:hover {
+    color: #5ebeee;
 }
 
-footer > a:visited {
-    color: #435fe8;
+footer a:visited {
+    color: #4b61cd;
 }
+
+.noncontainer a,
+.noncontainer a:active,
+.noncontainer a:link,
+.noncontainer a:hover,
+.container a,
+.container a:active,
+.container a:link, 
+.container a:hover {
+    color: #1c1945;
+}
+
+.noncontainer a:visited,
+.container a:visited {
+    color: #211e50; 
+}
+
 
 @media print {
     nav, footer, video {

@@ -20,7 +20,8 @@ h1 {
     padding-top: 5%;
     padding-bottom: 5%;
     background-image: url("img/background.jpg");
-    color: #FBFBFB;
+    background-color: #000000;
+    color: #FFFFFF;
     font-family: "Poetsen One", sans-serif;
     font-size: 250%;
 }
@@ -128,4 +129,12 @@ a > i {
     color: white;
     font-style: normal;
     margin: 5px;
+}
+
+footer > a a:active a:link a:hover {
+    color: #42b9f5;
+}
+
+footer > a:visited {
+    color: #435fe8;
 }

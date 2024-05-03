@@ -53,7 +53,7 @@ img {
 }*/
 
 footer {
-    margin: 20px;
+    padding: 20px;
     background-color: #0F0F0F;
     padding: 20px;
     color: #FBFBFB;
@@ -63,7 +63,7 @@ footer {
 }
 
 .noncontainer {
-    margin: 20px;
+    padding: 20px;
 }
 
 h2 {
@@ -184,6 +184,10 @@ th, td {
 
 caption {
     text-align: center;
+}
+
+#instructions {
+    padding: 15px;
 }
 
 @media print {

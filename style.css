@@ -88,7 +88,7 @@ p {
     font-size: 100%;
 }
 
-.img-thumbnail-home {
+.home-thumbnail {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -100,4 +100,26 @@ aside {
 
 article {
     text-align: left;
+}
+
+.electoral-map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+video {
+    margin: 15px;
+}
+
+figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+figcaption {
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
 }

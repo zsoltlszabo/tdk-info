@@ -8,9 +8,9 @@ body {
     background-color: #BCABAE;
 }
 
-.navbar {
+/*.navbar {
     background-color: #0F0F0F;
-}
+}*/
 
 h1 {
     font-weight: 1000;
@@ -48,11 +48,11 @@ img {
     margin: 10px;
 }
 
-.navbar-toggler-icon {
+/*.navbar-toggler-icon {
     background-color: #716969;
     border: 2px solid #2D2E2E;
     border-radius: 5px;
-}
+}*/
 
 footer {
     margin: 20px;

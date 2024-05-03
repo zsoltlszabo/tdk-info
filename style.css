@@ -174,6 +174,13 @@ footer a:visited {
     color: #e8ecff;
 }
 
+table {
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: center;
+}
 
 @media print {
     nav, footer, video {

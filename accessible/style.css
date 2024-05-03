@@ -1,0 +1,214 @@
+/*
+    Colour scheme: https://coolors.co/d7c8cc-0f0f0f-2d2e2e-716969-fbfbfb
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 200%;
+}
+
+nav .container-fluid {
+    background-color: #000000;
+}
+
+h1 {
+    font-weight: 1000;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 250%;
+}
+
+img {
+    height: 20em;
+}
+
+.block1 {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.block2 {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+.btn {
+    margin: 10px;
+}
+
+/*.navbar-toggler-icon {
+    background-color: #716969;
+    border: 2px solid #2D2E2E;
+    border-radius: 5px;
+}*/
+
+footer {
+    padding: 20px;
+    background-color: #0F0F0F;
+    padding: 20px;
+    color: #FBFBFB;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*.noncontainer {
+    padding: 20px;
+}*/
+
+h2 {
+    font-size: 200%;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 125%;
+    font-weight: 400;
+}
+
+p {
+    font-size: 100%;
+}
+
+.home-thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+aside {
+    font-style: italic;
+}
+
+article {
+    text-align: left;
+}
+
+.electoral-map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+video {
+    margin: 15px;
+}
+
+figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+figcaption {
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
+}
+
+#navlinks > a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    margin: 5px;
+}
+
+footer a, footer a:active, footer a:link, footer a:hover {
+    color: #5ebeee;
+}
+
+footer a:visited {
+    color: #4b61cd;
+}
+
+#content a,
+#content a:active,
+#content a:link, 
+#content a:hover {
+    color: #1f2869;
+}
+
+#content a:visited {
+    color: #252f7c; 
+}
+
+#content footer a,
+#content footer a:active, 
+#content footer a:link, 
+#content footer a:hover {
+    color: #5ebeee;
+}
+
+#content footer a:visited {
+    color: #4b61cd;
+}
+
+table {
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+
+caption {
+    text-align: center;
+}
+
+#instructions {
+    padding: 15px;
+}
+
+@media print {
+    nav, footer, video, details {
+        display: none !important;
+    }
+
+    h1 {
+        background: none;
+        color: #000000;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 10px;
+    }
+
+    .block1, .block2 {
+        color: #000000;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 2px;
+        padding-bottom: 0px
+    }
+
+    #usmap {
+        width: 50%;
+        height: auto;
+    }
+
+    #eumap {
+        width: 40%;
+        height: auto;
+    }
+
+    .noncontainer {
+        margin: 0px;
+    }
+}

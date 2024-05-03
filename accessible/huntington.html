@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        The Huntington method - TDK Info
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../fontawesome/css/font-awesome.min.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="sections visually-hidden-focusable">
+        <a href="#content">Jump to main content</a>
+        <a href="#huntington">First section: The Huntington method</a>
+        <a href="#refs">Second section: References</a>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">TDK Info</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="context.html">Context</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="huntington.html">Huntington method</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adaptation.html">Adaptation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="text-white" id="navlinks">
+              <a href="../huntington.html" class="nav-item">
+                <i class="fa fa-universal-access fa-lg" aria-hidden="true"></i>
+                <span class="sr-only">Link to the website's regular version</span>
+              </a>
+              <a href="https://github.com/zsoltlszabo/tdk-info" target="_blank" rel="noopener noreferrer" class="nav-item">
+                <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
+                <span class="sr-only">Link to the website's GitHub page</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div id="content">
+        <article>
+            <h1>
+                The Huntington method
+            </h1>
+            <div class="noncontainer">
+                <section class="block1" id="huntington">
+                    The current method of apportionment was developed by an American mathematician, Edward V. Huntington
+                    in
+                    the
+                    early 20th century. The method was described in <a href="#Hun28">[Hun28]</a>, <a
+                        href="#Sul72">[Sul72]</a>
+                    and <a href="#Sul82">[Sul82]</a>.
+                    <h2>The requirements for the system</h2>
+                    Huntington determined, that given two states, which have populations $A$ and $B$ respectively, have
+                    $a$
+                    and
+                    $b$
+                    seats in the House, the perfect system would give a result where
+                    $$
+                    \frac{A}{a} = \frac{B}{b} \text{.}
+                    $$
+                    As it would be basically impossible to satisfy this equation in a representative democracy,
+                    Huntington's
+                    goal was to make this inequality as small as possible.
+                    <h2>The absolute difference and the relative difference</h2>
+                    <strong>
+                        A crucial question in developing the system was whether to use the absolute or the relative
+                        difference
+                        for
+                        the apportionment process.
+                    </strong>For example, if there are two districts, one with a population of 1,000
+                    and
+                    another one with 1,001 people, the absolute difference here is 1, and the relative difference is
+                    0.1%,
+                    but
+                    if two districts have a population of 10 and 11, the absolute difference would still be 1, but the
+                    relative
+                    difference would be 10%. Due to this reason, Huntington recommended the use of the relative
+                    difference
+                    instead of the absolute one. We can achieve the relative difference between states $A$ and $B$ by
+                    calculating $\frac{\frac{A}{a}-\frac{B}{b}}{\frac{B}{b}}$.
+                    <h2>The first test for the method of equal proportions</h2>
+                    <strong>
+                        Huntington defined the first test for his method (known as the method of equal proportions or the
+                        method
+                        of
+                        the geometric mean, which we will be abbreviating as MGM) as follows
+                    </strong> (see [Page 3, <a
+                        href="#Hun28">Hun28</a>]) :
+                    <blockquote>"If the relative difference between the congressional districts, $\frac{A}{a}$ and
+                        $\frac{B}{b}$, belonging to any two states can be reduced by a transfer of a representative from
+                        one
+                        state to the other, then this transfer should be made."</blockquote>
+                    We can write the following "inequality" <i>(Please note that this is not a "real inequality". We are
+                        writing
+                        this as an inequality to transform these fractions into the desired form.)</i> for the test:
+                    $$
+                    \frac{\frac{A}{a + 1} - \frac{B}{b}}{\frac{B}{b}} &lt; \frac{\frac{B}{b + 1} -
+                    \frac{A}{a}}{\frac{A}{a}}
+                    $$
+                    We
+                    rearrange this inequality to get the multiplier that can be used for successive applications of the
+                    test: <i>(We know that the population of a state and the number of representatives assigned to it
+                        will
+                        be a positive integer, so the direction of the inequality will not change, and we can take the
+                        square
+                        root of these numbers on the set of real numbers.)</i>
+                    $$\frac{\frac{A}{a + 1} - \frac{B}{b}}{\frac{B}{b}} &lt; \frac{\frac{B}{b + 1} -
+                    \frac{A}{a}}{\frac{A}{a}}
+                    \Rightarrow $$ $$\left( \frac{A}{a} \right) \left( \frac{A}{a + 1} - \frac{B}{b} \right) &lt; \left(
+                    \frac{B}{b} \right) \left( \frac{B}{b + 1} - \frac{A}{a} \right) \Rightarrow $$ $$\frac{A^2}{a\left(
+                    a+1\right) } - \frac{AB}{ab} &lt; \frac{B^2}{b \left( b+1 \right) } - \frac{AB}{ab} \Rightarrow $$
+                    $$\frac{A^2}{a \left( a + 1 \right) } &lt; \frac{B^2}{b \left( b + 1 \right) } \Rightarrow $$
+                    $$\frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }} $$
+                    <h2>The second test for the method of equal proportions</h2>
+                    This is similar to the first one, but instead of the ratio $\frac{A}{a}$, it uses $\frac{a}{A}$.
+                    Here, we divide the number of representatives by the population. We can think of this as the
+                    "individual share" each person living in the state gets of the representative. In perfect
+                    apportionment, the equality would look like this:
+                    $$
+                    \frac{a}{A} = \frac{b}{B}
+                    $$
+                    <strong>Huntington defined the second test as follows</strong> (see [Page 4, <a href="#Hun28">Hun28</a>]):
+                    "If the relative difference between the two "individual shares", $\frac{a}{A}$ and $\frac{b}{B}$,
+                    belonging to any two states, can be reduced by a transfer of a representative from one state to the
+                    other, then this transfer should be made."
+                    We can see that the equality is the reciprocal of the one previously seen.
+                    If we perform transformations as seen in the first test, we will arrive at the following
+                    inequality (which is also the reciprocal of the one in the first test):
+                    $$
+                    \frac{\sqrt{a \left( a + 1 \right) }}{A} &lt; \frac{\sqrt{b \left( b + 1 \right) }}{B}
+                    $$
+                    <h2>Working rule for the method of equal proportions</h2>
+                    In the first test, we transformed the inequality into the following:
+                    $$
+                    \frac{A}{\sqrt{a \left( a + 1 \right) }} &lt; \frac{B}{\sqrt{b \left( b + 1 \right) }}
+                    $$
+                    As we are dividing the population of a state, we can interpret it as multiplying the population of
+                    state
+                    $A$
+                    by the following fraction:
+                    $$
+                    \frac{1}{\sqrt{a \left( a + 1 \right)}}
+                    $$
+                    Let's start by writing down the notations we will be using:
+                    <ul>
+                        <li>$n$: the number of states</li>
+                        <li>$r$: the number of representatives that we need to assign</li>
+                        <li>$A$: the population of state $A$</li>
+                        <li>$a$: the number of representatives assigned to state $A$</li>
+                    </ul>
+                    The first thing we need to do is to write down each state, its population and the number of
+                    representatives
+                    assigned to it. At the start, each state will be assigned one representative. Now we see that we
+                    need to
+                    perform the procedure $n-r$ times.
+                    <strong>
+                        Every time we assign a representative, we need to multiply the population of each state by
+                        $$
+                        \frac{1}{\sqrt{a \left( a + 1 \right) }} \text{,}
+                        $$
+                        where $a$ will be the number of representatives the state currently holds (after each iteration).
+                    </strong>
+                    The
+                    state
+                    that will be assigned the representative will be the state with the highest population after
+                    performing
+                    the
+                    multiplication.
+                    <h2>Alternative methods for apportionment</h2>
+                    <strong>
+                        We can achieve alternative methods for apportionment by slightly modifying the tests defined by
+                        Huntington
+                        for the method of the geometric mean.
+                    </strong> By using the absolute difference instead of the relative
+                    difference,
+                    we can arrive at the method of the harmonic mean and the method of the arithmetic mean. These
+                    methods
+                    have
+                    been described in <a href="#Hun21">[Hun21]</a>, <a href="#Hun28">[Hun28]</a> and <a
+                        href="#Sul72">[Sul72]</a>.
+                    <h3>Method of the arithmetic mean</h3>
+                    <strong>
+                        We can achieve the method of the arithmetic mean (which we will be abbreviating as MAM) by taking
+                        the
+                        absolute difference between the individual shares of two states.
+                    </strong>Huntington defined the test for the
+                    method
+                    of the arithmetic mean (or the method of major fractions) as follows (see [<a
+                        href="#Hun28">Hun28</a>, Page
+                    7]):
+                    <blockquote>"If the absolute difference between the two "individual shares", $\frac{a}{A}$ and
+                        $\frac{b}{B}$, can be reduced by a transfer of a representative from one state to the other,
+                        then
+                        this
+                        transfer should be made (except that no state shall be left without at least one
+                        representative)."
+                    </blockquote>
+                    We can write the following inequality using this test (using the same notations as before):
+                    $$
+                    \frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A}
+                    $$
+                    To achieve the working rule for the method of the arithmetic mean, we need to transform the
+                    inequality
+                    like
+                    so:
+                    $$\frac{a + 1}{A} - \frac{b}{B} &lt; \frac{b + 1}{B} - \frac{a}{A} \Rightarrow $$
+                    $$\frac{a + 1}{A} + \frac{a}{A} &lt; \frac{b + 1}{B} + \frac{b}{B} \Rightarrow $$
+                    $$\frac{2a + 1}{A} &lt; \frac{2b + 1}{B}$$
+                    Taking the reciprocals, we get:
+                    $$\frac{A}{2a+1} > \frac{B}{2b+1} \Rightarrow$$
+                    $$\frac{A}{a + \frac{1}{2}} > \frac{B}{b + \frac{1}{2}}$$
+                    From this result, we can see that the multiplier for state $A$ for the method of the arithmetic mean
+                    will
+                    be:
+                    $$
+                    \frac{1}{a + \frac{1}{2}}
+                    $$
+                    With this multiplier, we can arrive at the working rule for this method, which is similar to that of
+                    the
+                    method of the geometric mean. We need to perform the same procedure as we did for the method of
+                    equal
+                    proportions, with the only difference being the multiplier. Instead of using the original
+                    multiplier, we
+                    shall
+                    use the one calculated using the arithmetic mean.
+                    <h3>Method of the harmonic mean</h3>
+                    <strong>
+                        We can achieve the method of the harmonic mean (which we will be abbreviating as MHM) by taking the
+                        absolute
+                        difference between the population of two districts.
+                    </strong>Huntington defined the test for the method of
+                    the
+                    harmonic mean as follows (see [<a href="#Hun28">Hun28</a>, Page 7]):
+                    <blockquote>"If the absolute difference between the two congressional districts $\frac{A}{a}$ and
+                        $\frac{B}{b}$, can be reduced by a transfer of a representative from one state to the other,
+                        then
+                        this
+                        transfer should be made."</blockquote>
+                    We can write the following inequality using this test (using the same notations as before):
+                    $$
+                    \frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a}
+                    $$
+                    To achieve the working rule for the method of the arithmetic mean, we need to transform the
+                    inequality
+                    like
+                    so:
+                    $$\frac{A}{a+1} - \frac{B}{b} &lt; \frac{B}{b+1} - \frac{A}{a} \Rightarrow$$
+                    $$\frac{A}{a+1} + \frac{A}{a} &lt; \frac{B}{b+1} + \frac{B}{b} \Rightarrow$$
+                    $$ \left( \frac{1}{a+1} + \frac{1}{a} \right) &lt; B \left( \frac{1}{b+1} + \frac{1}{b} \right)
+                    \Rightarrow$$
+                    $$ \left( \frac{a}{a(a+1)} + \frac{a+1}{a(a+1)} \right) &lt; B \left( \frac{b}{b(b+1)} +
+                    \frac{b+1}{b(b+1)}
+                    \right) \Rightarrow$$
+                    $$ \left( \frac{2a+1}{a(a+1)} \right) &lt; B \left( \frac{2b+1}{b(b+1)} \right) \Rightarrow$$
+                    $$\frac{A}{\frac{a(a+1)}{2a+1}} &lt; \frac{B}{\frac{b(b+1)}{2b+1}} \Rightarrow$$
+                    $$\frac{A}{2 \cdot \frac{a(a+1)}{2a+1}} &lt; \frac{B}{2 \cdot \frac{a(a+1)}{2b+1}}$$
+                    From this result, we can see that the multiplier for state $A$ for the method of the harmonic mean
+                    will
+                    be:
+                    $$
+                    \frac{1}{2 \cdot \frac{a(a+1)}{2a+1}}
+                    $$
+                    With this multiplier, we can arrive at the working rule for this method, which is similar to that of
+                    the
+                    method of the geometric mean. We need to perform the same procedure as we did for the method of
+                    equal
+                    proportions, with the only difference being the multiplier. Instead of using the original
+                    multiplier, we
+                    shall
+                    use the multiplier for the method of the harmonic mean.
+                    <h2>Composition of the US House</h2>
+                    The following table shows the apportionment results using the 2020 census data for the three methods
+                    previously described.
+                    <table class="table table-hover">
+                        <caption>
+                            <strong>
+                                Apportionment using the 2020 census data
+                            </strong>
+                            <details>
+                                <summary>Summary</summary>
+                                <p>
+                                    This table contains the generated apportionment data using the three methods.
+                                    The first row contains the name of the state, the second country contains its population,
+                                    the third row contains its current number of representatives, and the fourth row contains the
+                                    generated apportionment data with the method of the geometric mean, the fifth with the
+                                    method of the arithmetic mean and the sixth with the method of the harmonic mean.
+                                </p>
+                            </details>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">State</th>
+                                <th scope="col">Population</th>
+                                <th scope="col"><abbr title="Method of the geometric mean">MGM</abbr></th>
+                                <th scope="col"><abbr title="Method of the arithmetic mean">MAM</abbr></th>
+                                <th scope="col"><abbr title="Method of the harmonic mean">MHM</abbr></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Alabama</th>
+                                <td>5,030,053</td>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alaska</th>
+                                <td>736,081</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Arizona</th>
+                                <td>7,158,923</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Arkansas</th>
+                                <td>3,013,756</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">California</th>
+                                <td>39,576,757</td>
+                                <td>52</td>
+                                <td>52</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Colorado</th>
+                                <td>5,782,171</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Connecticut</th>
+                                <td>3,608,298</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Delaware</th>
+                                <td>990,837</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Florida</th>
+                                <td>21,570,527</td>
+                                <td>28</td>
+                                <td>28</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Georgia</th>
+                                <td>10,725,274</td>
+                                <td>14</td>
+                                <td>14</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hawaii</th>
+                                <td>1,460,137</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Idaho</th>
+                                <td>1,841,377</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Illinois</th>
+                                <td>12,822,739</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indiana</th>
+                                <td>6,790,280</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Iowa</th>
+                                <td>3,192,406</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kansas</th>
+                                <td>2,1940,865</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kentucky</th>
+                                <td>4,509,342</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Louisiana</th>
+                                <td>4,661,468</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Maine</th>
+                                <td>1,363,582</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Maryland</th>
+                                <td>6,185,278</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Massachusetts</th>
+                                <td>7,033,469</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Michigan</th>
+                                <td>10,084,442</td>
+                                <td>13</td>
+                                <td>13</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Minnesota</th>
+                                <td>5,709,752</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mississippi</th>
+                                <td>2,963,914</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Missouri</th>
+                                <td>6,160,281</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Montana</th>
+                                <td>1,085,407</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nebraska</th>
+                                <td>1,963,333</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nevada</th>
+                                <td>3,108,462</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">New Hampshire</th>
+                                <td>1,379,089</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">New Jersey</th>
+                                <td>9,294,493</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">New Mexico</th>
+                                <td>2,120,220</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">New York</th>
+                                <td>20,215,751</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">North Carolina</th>
+                                <td>10,453,948</td>
+                                <td>14</td>
+                                <td>14</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">North Dakota</th>
+                                <td>779,702</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ohio</th>
+                                <td>11,808,848</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Oklahoma</th>
+                                <td>3,963,516</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Oregon</th>
+                                <td>4,241,500</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pennsylvania</th>
+                                <td>13,011,844</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Rhode Island</th>
+                                <td>1,098,163</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">South Carolina</th>
+                                <td>5,124,712</td>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">South Dakota</th>
+                                <td>887,770</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tennessee</th>
+                                <td>6,916,897</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Texas</th>
+                                <td>29,183,290</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Utah</th>
+                                <td>3,275,252</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Vermont</th>
+                                <td>643,503</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Virginia</th>
+                                <td>8,654,542</td>
+                                <td>11</td>
+                                <td>11</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Washington</th>
+                                <td>7,715,946</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">West Virginia</th>
+                                <td>1,795,045</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wisconsin</th>
+                                <td>5,897,473</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wyoming</th>
+                                <td>577,719</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="block2" id="refs">
+                    <h2>References</h2>
+                    <p id="Hun21">[Hun21] <cite>E. V. Huntington, A new method of apportionment of representatives,
+                            Quarterly
+                            Publications of the American Statistical Association 17 (1921), no. 135, 859–870.</cite>
+                    </p>
+                    <p id="Hun28">[Hun28] <cite>E. V. Huntington, The apportionment of representatives in Congress,
+                            Trans.
+                            Amer.
+                            Math. Soc. 30 (1928), no. 1, 85–110. MR 1501423</cite> </p>
+                    <p id="Sul72">[Sul72] <cite>J. J. Sullivan, The election of a president, The Mathematics Teacher 65
+                            (1972),
+                            no. 6, 493–501.</cite> </p>
+                    <p id="Sul82">[Sul82] <cite>J. J. Sullivan, Apportionment—a decennial problem, The Mathematics
+                            Teacher
+                            75
+                            (1982), no. 1, 20–25.</cite> </p>
+                </section>
+            </div>
+        </article>
+        <footer>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <p>The website was written by <b>Zsolt Szabó</b>.</p>
+                    <p>Eötvös Lóránd University Faculty of Informatics</p>
+                    <p>H-1117 Budapest, Pázmány Péter stny. 1/c</p>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <p><b>GitHub repository for the website:</b> <a href="https://github.com/zsoltlszabo/tdk-info"
+                            target="_blank" rel="noopener noreferrer">github.com/zsoltlszabo/tdk-info</a></p>
+                    <p><b>"Caesar" website:</b> <a href="https://zslszabo.web.elte.hu" target="_blank"
+                            rel="noopener noreferrer">zslszabo.web.elte.hu</a></p>
+                    <p><b>Email address:</b> <a href="mailto:qxbh47@inf.elte.hu">qxbh47@inf.elte.hu</a> or <a
+                            href="mailto:zslszabo@student.elte.hu">zslszabo@student.elte.hu</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

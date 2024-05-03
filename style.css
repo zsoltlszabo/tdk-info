@@ -97,3 +97,7 @@ p {
 aside {
     font-style: italic;
 }
+
+article {
+    text-align: left;
+}

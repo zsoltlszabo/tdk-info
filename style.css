@@ -138,3 +138,28 @@ footer > a a:active a:link a:hover {
 footer > a:visited {
     color: #435fe8;
 }
+
+@media print {
+    nav, footer, video {
+        display: none !important;
+    }
+
+    h1 {
+        background: none;
+        color: #000000;
+    }
+
+    .block1, .block2 {
+        color: #000000;
+    }
+
+    #usmap {
+        width: 50%;
+        height: auto;
+    }
+
+    #eumap {
+        width: 40%;
+        height: auto;
+    }
+}

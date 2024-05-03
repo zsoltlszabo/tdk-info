@@ -149,13 +149,13 @@ footer a:visited {
 .sections a:active,
 .sections a:link, 
 .sections a:hover {
-    color: #15235d;
+    color: #1f2869;
 }
 
 .noncontainer a:visited,
 .container a:visited,
 .sections a:visited {
-    color: #0f3b5d; 
+    color: #252f7c; 
 }
 
 .noncontainer .block2 a,

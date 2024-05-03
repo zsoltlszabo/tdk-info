@@ -15,20 +15,44 @@
 
 <body>
     <a href="#content" class="visually-hidden-focusable">Jump to content</a>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="text-white navbar-brand" href="index.html">TDK Info</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">TDK Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="text-white nav-link" aria-current="page" href="index.html">Home</a>
-                    <a class="text-white nav-link" href="context.html">Context</a>
-                    <a class="text-white nav-link" href="huntington.html">Huntington method</a>
-                    <a class="text-white nav-link active" href="adaptation.html">Adaptation</a>
-                    <a class="text-white nav-link" href="contact.html">Contact</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="context.html">Context</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Huntington method</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adaptation.html">Adaptation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="text-white navlinks">
+                    <a href="https://github.com/zsoltlszabo/tdk-info" target="_blank" rel="noopener noreferrer"
+                        class="nav-item">
+                        <i class="fa fa-universal-access fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Link to the website's accessible version (high contrast, larger
+                            font)</span>
+                    </a>
+                    <a href="https://github.com/zsoltlszabo/tdk-info" target="_blank" rel="noopener noreferrer"
+                        class="nav-item">
+                        <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Link to the website's GitHub page</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,28 +66,36 @@
             <div class="noncontainer">
                 <section class="block1">
                     <p>There are two approaches we can take when adapting Huntington's method. </p>
-                    <p>The first is to completely ignore the principle of degressive proportionality and give every state
+                    <p>The first is to completely ignore the principle of degressive proportionality and give every
+                        state
                         near
-                        equal representation in the European Parliament. Taking this approach would lead us to a Parliament
+                        equal representation in the European Parliament. Taking this approach would lead us to a
+                        Parliament
                         which looks more like the US House of Representatives. </p>
                     <p>The second approach is to keep the principle of degressive proportionality but grant every member
                         state
-                        an m minimum number of seats, and allocate the remaining seats using Huntington's method subject to
+                        an m minimum number of seats, and allocate the remaining seats using Huntington's method subject
+                        to
                         a
                         maximum of 96 seats. After a member state reaches 96 seats, it shall be assigned no more seats.
                         These
                         guidelines were established [<a href="#Gri12">Gri12</a>, Page 3]. </p>
                     <h2>Ignoring degressive proportionality</h2>
-                    <p>If we wish to ignore the principle of degressive proportionality, we will get a result, where every
+                    <p>If we wish to ignore the principle of degressive proportionality, we will get a result, where
+                        every
                         member state has roughly equal representation. This will give us a result that gives the more
                         populous
-                        member states (such as Germany and France) a lot more power when compared to the current system. The
-                        results, if we applied the different methods using the Python program, can be found in the following
+                        member states (such as Germany and France) a lot more power when compared to the current system.
+                        The
+                        results, if we applied the different methods using the Python program, can be found in the
+                        following
                         table: </p>
                     TABLE
-                    <p>When comparing the apportionment data between the three methods, we can only see a difference in the
+                    <p>When comparing the apportionment data between the three methods, we can only see a difference in
+                        the
                         case
-                        of two states. The method of the arithmetic mean assigns one seat fewer to Cyprus, and one more to
+                        of two states. The method of the arithmetic mean assigns one seat fewer to Cyprus, and one more
+                        to
                         Germany than the other two methods. Cyprus is one of the least populous states in the European
                         Union,
                         and Germany is the most populous. This also highlights that the method of the arithmetic mean
@@ -77,15 +109,18 @@
                         significant differences and gives less power to the smaller states. </p>
                     <p>From these results, it is clear why the principle of degressive proportionality is crucial in the
                         balance
-                        between the power of a member state, and the power of the people living in the European Union. Using
+                        between the power of a member state, and the power of the people living in the European Union.
+                        Using
                         this system, the four most populous states alone would have a sizeable 402-seat (or 403-seat)
                         majority.
                     </p>
                 </section>
                 <section class="block2">
                     <h2>Keeping degressive proportionality</h2>
-                    <p>We will use a version of the Python code modified according to the guidelines in [<a href="#Gri12">Gri12</a>, Page 3]. The
-                        code along with a full, line-by-line explanation can be found in section 4.2. Using census data from
+                    <p>We will use a version of the Python code modified according to the guidelines in [<a
+                            href="#Gri12">Gri12</a>, Page 3]. The
+                        code along with a full, line-by-line explanation can be found in section 4.2. Using census data
+                        from
                         2011 from across the European Union, we have arrived at the following composition using the
                         different
                         methods (see the table below). </p>
@@ -94,16 +129,20 @@
                         differences. </p>
                     <p>As this simulation respects degressive proportionality, we can say that the least populous member
                         states
-                        benefited greatly from this apportionment. We also see that there are more states with the minimum
+                        benefited greatly from this apportionment. We also see that there are more states with the
+                        minimum
                         number of seats than under the current system. </p>
                     <p>The only member state that reached the maximum of 96 seats under the current system is Germany.
                         Germany
-                        reached this threshold under our system as well, making Germany less represented than the smaller
+                        reached this threshold under our system as well, making Germany less represented than the
+                        smaller
                         states. </p>
-                    <p>We can also see that a larger number of states reached 96 seats. These states were already populous,
+                    <p>We can also see that a larger number of states reached 96 seats. These states were already
+                        populous,
                         so
                         we can say that this system benefits the larger states as well. </p>
-                    <p>Another significant statement that we can make after looking the data is that the medium-sized states
+                    <p>Another significant statement that we can make after looking the data is that the medium-sized
+                        states
                         were the biggest losers of our system. They lost seats at the expense of larger states. </p>
                     table!!!!
                 </section>
@@ -115,24 +154,24 @@
                             in Theory and Practice. </cite></p>
                 </section>
         </article>
-        </div>
-        <footer>
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <p>The website was written by <b>Zsolt Szabó</b>.</p>
-                    <p>Eötvös Lóránd University Faculty of Informatics</p>
-                    <p>H-1117 Budapest, Pázmány Péter stny. 1/c</p>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <p><b>GitHub repository for the website:</b> <a href="https://github.com/zsoltlszabo/tdk-info"
-                            target="_blank" rel="noopener noreferrer">github.com/zsoltlszabo/tdk-info</a></p>
-                    <p><b>"Caesar" website:</b> <a href="https://zslszabo.web.elte.hu" target="_blank"
-                            rel="noopener noreferrer">zslszabo.web.elte.hu</a></p>
-                    <p><b>Email address:</b> <a href="mailto:qxbh47@inf.elte.hu">qxbh47@inf.elte.hu</a> or <a
-                            href="mailto:zslszabo@student.elte.hu">zslszabo@student.elte.hu</a></p>
-                </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <p>The website was written by <b>Zsolt Szabó</b>.</p>
+                <p>Eötvös Lóránd University Faculty of Informatics</p>
+                <p>H-1117 Budapest, Pázmány Péter stny. 1/c</p>
             </div>
-        </footer>
+            <div class="col-lg-6 col-12">
+                <p><b>GitHub repository for the website:</b> <a href="https://github.com/zsoltlszabo/tdk-info"
+                        target="_blank" rel="noopener noreferrer">github.com/zsoltlszabo/tdk-info</a></p>
+                <p><b>"Caesar" website:</b> <a href="https://zslszabo.web.elte.hu" target="_blank"
+                        rel="noopener noreferrer">zslszabo.web.elte.hu</a></p>
+                <p><b>Email address:</b> <a href="mailto:qxbh47@inf.elte.hu">qxbh47@inf.elte.hu</a> or <a
+                        href="mailto:zslszabo@student.elte.hu">zslszabo@student.elte.hu</a></p>
+            </div>
+        </div>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

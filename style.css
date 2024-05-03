@@ -123,3 +123,9 @@ figcaption {
     font-style: italic;
     text-align: center;
 }
+
+a > i {
+    color: white;
+    font-style: normal;
+    margin: 5px;
+}

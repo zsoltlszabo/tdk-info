@@ -182,6 +182,10 @@ th, td {
     text-align: center;
 }
 
+caption {
+    text-align: center;
+}
+
 @media print {
     nav, footer, video {
         display: none !important;

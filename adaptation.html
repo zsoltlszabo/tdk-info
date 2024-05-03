@@ -24,42 +24,45 @@
     </div>
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">TDK Info</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="context.html">Context</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="huntington.html">Huntington method</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="adaptation.html">Adaptation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="text-white" id="navlinks">
-              <a href="accessible/adaptation.html" target="_blank" rel="noopener noreferrer" class="nav-item">
-                <i class="fa fa-universal-access fa-lg" aria-hidden="true"></i>
-                <span class="sr-only">Link to the website's accessible version (high contrast, larger font)</span>
-              </a>
-              <a href="https://github.com/zsoltlszabo/tdk-info" target="_blank" rel="noopener noreferrer" class="nav-item">
-                <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
-                <span class="sr-only">Link to the website's GitHub page</span>
-              </a>
+            <a class="navbar-brand" href="index.html">TDK Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="context.html">Context</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="huntington.html">Huntington method</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="adaptation.html">Adaptation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="text-white" id="navlinks">
+                    <a href="accessible/adaptation.html" target="_blank" rel="noopener noreferrer" class="nav-item">
+                        <i class="fa fa-universal-access fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Link to the website's accessible version (high contrast, larger
+                            font)</span>
+                    </a>
+                    <a href="https://github.com/zsoltlszabo/tdk-info" target="_blank" rel="noopener noreferrer"
+                        class="nav-item">
+                        <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Link to the website's GitHub page</span>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
     <div id="content">
         <h1>
@@ -89,18 +92,264 @@
                         These
                         guidelines were established [<a href="#Gri12">Gri12</a>, Page 3]. </p>
                     <h2>Ignoring degressive proportionality</h2>
-                    <p><strong>If we wish to ignore the principle of degressive proportionality</strong>, we will get a result, where
+                    <p><strong>If we wish to ignore the principle of degressive proportionality</strong>, we will get a
+                        result, where
                         every
                         member state has roughly equal representation. This <strong>
                             will give us a result that gives the more
                             populous
                             member states
-                        </strong> (such as Germany and France) <strong>have a lot more power when compared to the current system</strong>.
+                        </strong> (such as Germany and France) <strong>have a lot more power when compared to the
+                            current system</strong>.
                         The
                         results, if we applied the different methods using the Python program, can be found in the
                         following
                         table: </p>
-                    TABLE
+                        <table class="table table-hover table-striped">
+                            <caption>
+                                <strong>
+                                    Apportionment in the European Parliament without degressive proportionality
+                                </strong>
+                                <details>
+                                    <summary>Summary</summary>
+                                    <p>
+                                        This table contains the generated apportionment data without degressive proportionality.
+                                        The first row contains the name of the country, the second country contains its population,
+                                        the third row contains its current number of representatives, and the fourth row contains the
+                                        generated apportionment data with the method of the geometric mean, the fifth with the
+                                        method of the arithmetic mean and the sixth with the method of the harmonic mean.
+                                    </p>
+                                </details>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">Population</th>
+                                    <th scope="col">Current</th>
+                                    <th scope="col"><abbr title="Method of the geometric mean">MGM</abbr></th>
+                                    <th scope="col"><abbr title="Method of the arithmetic mean">MAM</abbr></th>
+                                    <th scope="col"><abbr title="Method of the harmonic mean">MHM</abbr></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Austria</th>
+                                    <td>8,401,940</td>
+                                    <td>19</td>
+                                    <td>13</td>
+                                    <td>13</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Belgium</th>
+                                    <td>11,000,638</td>
+                                    <td>21</td>
+                                    <td>18</td>
+                                    <td>18</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bulgaria</th>
+                                    <td>7,364,570</td>
+                                    <td>17</td>
+                                    <td>12</td>
+                                    <td>12</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Croatia</th>
+                                    <td>4,284,889</td>
+                                    <td>12</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cyprus</th>
+                                    <td>840,407</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Czech Republic</th>
+                                    <td>10,436,560</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Denmark</th>
+                                    <td>5,560,628</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Estonia</th>
+                                    <td>1,294,455</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Finland</th>
+                                    <td>5,375,276</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">France</th>
+                                    <td>64,933,400</td>
+                                    <td>79</td>
+                                    <td>104</td>
+                                    <td>104</td>
+                                    <td>104</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Germany</th>
+                                    <td>80,219,695</td>
+                                    <td>96</td>
+                                    <td>128</td>
+                                    <td>129</td>
+                                    <td>128</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Greece</th>
+                                    <td>10,816,286</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hungary</th>
+                                    <td>9,937,628</td>
+                                    <td>21</td>
+                                    <td>16</td>
+                                    <td>16</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ireland</th>
+                                    <td>4,574,888</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Italy</th>
+                                    <td>59,433,744</td>
+                                    <td>76</td>
+                                    <td>95</td>
+                                    <td>95</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Latvia</th>
+                                    <td>2,070,371</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lithuania</th>
+                                    <td>3,043,429</td>
+                                    <td>11</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Luxembourg</th>
+                                    <td>512,353</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Malta</th>
+                                    <td>417,432</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Netherlands</th>
+                                    <td>16,655,799</td>
+                                    <td>29</td>
+                                    <td>27</td>
+                                    <td>27</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Poland</th>
+                                    <td>38,044,565</td>
+                                    <td>52</td>
+                                    <td>61</td>
+                                    <td>61</td>
+                                    <td>61</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Portugal</th>
+                                    <td>10,562,178</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Romania</th>
+                                    <td>20,121,641</td>
+                                    <td>33</td>
+                                    <td>32</td>
+                                    <td>32</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Slovakia</th>
+                                    <td>5,397,036</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Slovenia</th>
+                                    <td>2,050,189</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Spain</th>
+                                    <td>46,815,910</td>
+                                    <td>59</td>
+                                    <td>75</td>
+                                    <td>75</td>
+                                    <td>75</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sweden</th>
+                                    <td>9,482,855</td>
+                                    <td>21</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     <p>When comparing the apportionment data between the three methods, we can only see a difference in
                         the
                         case
@@ -140,14 +389,16 @@
                         2011 from across the European Union, we have arrived at the following composition using the
                         different
                         methods (see the table below). </p>
-                    <p>Using this data, we can see that <strong>all three methods generated the same results</strong>. When analysing the
+                    <p>Using this data, we can see that <strong>all three methods generated the same results</strong>.
+                        When analysing the
                         difference between our apportionment and the official apportionment, we can notice a few major
                         differences. </p>
                     <p><strong>
-                        As this simulation respects degressive proportionality, we can say that the least populous member
+                            As this simulation respects degressive proportionality, we can say that the least populous
+                            member
                             states
                             benefited greatly from this apportionment.
-                    </strong> We also see that there are more states with the
+                        </strong> We also see that there are more states with the
                         minimum
                         number of seats than under the current system. </p>
                     <p>The only member state that reached the maximum of 96 seats under the current system is Germany.
@@ -160,11 +411,198 @@
                         so
                         we can say that this system benefits the larger states as well. </p>
                     <p>Another significant statement that we can make after looking the data is that <strong>
-                        the medium-sized
+                            the medium-sized
                             states
                             were the biggest losers of our system
-                    </strong>. They lost seats at the expense of larger states. </p>
-                    table!!!!
+                        </strong>. They lost seats at the expense of larger states. </p>
+                        <table class="table table-dark table-hover table-striped">
+                            <caption>
+                                <strong>
+                                    Apportionment in the European Parliament with degressive proportionality
+                                </strong>
+                                <details>
+                                    <summary>Summary</summary>
+                                    <p>
+                                        This table contains the generated apportionment data with degressive proportionality.
+                                        The first row contains the name of the country, the second country contains its population,
+                                        the third row contains its current number of representatives, and the fourth row contains the
+                                        generated apportionment data, since all three methods gave us the same result in this case.
+                                    </p>
+                                </details>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">Population</th>
+                                    <th scope="col">Current</th>
+                                    <th scope="col">Hypothetical</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Austria</th>
+                                    <td>8,401,940</td>
+                                    <td>19</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Belgium</th>
+                                    <td>11,000,638</td>
+                                    <td>21</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bulgaria</th>
+                                    <td>7,364,570</td>
+                                    <td>17</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Croatia</th>
+                                    <td>4,284,889</td>
+                                    <td>12</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cyprus</th>
+                                    <td>840,407</td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Czech Republic</th>
+                                    <td>10,436,560</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Denmark</th>
+                                    <td>5,560,628</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Estonia</th>
+                                    <td>1,294,455</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Finland</th>
+                                    <td>5,375,276</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">France</th>
+                                    <td>64,933,400</td>
+                                    <td>79</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Germany</th>
+                                    <td>80,219,695</td>
+                                    <td>96</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Greece</th>
+                                    <td>10,816,286</td>
+                                    <td>21</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hungary</th>
+                                    <td>9,937,628</td>
+                                    <td>21</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ireland</th>
+                                    <td>4,574,888</td>
+                                    <td>13</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Italy</th>
+                                    <td>59,433,744</td>
+                                    <td>76</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Latvia</th>
+                                    <td>2,070,371</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lithuania</th>
+                                    <td>3,043,429</td>
+                                    <td>11</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Luxembourg</th>
+                                    <td>512,353</td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Malta</th>
+                                    <td>417,432</td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Netherlands</th>
+                                    <td>16,655,799</td>
+                                    <td>29</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Poland</th>
+                                    <td>38,044,565</td>
+                                    <td>52</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Portugal</th>
+                                    <td>10,562,178</td>
+                                    <td>21</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Romania</th>
+                                    <td>20,121,641</td>
+                                    <td>33</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Slovakia</th>
+                                    <td>5,397,036</td>
+                                    <td>14</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Slovenia</th>
+                                    <td>2,050,189</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Spain</th>
+                                    <td>46,815,910</td>
+                                    <td>59</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sweden</th>
+                                    <td>9,482,855</td>
+                                    <td>21</td>
+                                    <td>16</td>
+                                </tr>
+                            </tbody>
+                        </table>
                 </section>
                 <section class="block1" id="refs">
                     <h2>References</h2>

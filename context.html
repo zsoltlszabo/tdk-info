@@ -21,7 +21,12 @@
 </head>
 
 <body>
-    <a href="#content" class="visually-hidden-focusable">Jump to content</a>
+    <div class="sections visually-hidden-focusable">
+        <a href="#content">Jump to main content</a>
+        <a href="#us">First section: United States</a>
+        <a href="#eu">Second section: European Union</a>
+        <a href="#refs">Third section: References</a>
+    </div>
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">TDK Info</a>
@@ -71,7 +76,7 @@
                 The context of the apportionment systems
             </h1>
             <div class="noncontainer">
-                <section class="block1">
+                <section class="block1" id="us">
                     <h2>United States</h2>
                     <h3>History</h3>
                     <p>After the foundation of the United States in 1776, the Founding Fathers needed to establish a
@@ -134,7 +139,7 @@
                         detail on
                         the page about the <a href="huntington.html">Huntington method</a>.</p>
                 </section>
-                <section class="block2">
+                <section class="block2" id="eu">
                     <h2>European Union</h2>
                     <h3>The history</h3>
                     <p>The President of the European Commission is the most powerful official in the European Union.
@@ -259,8 +264,8 @@
                     <p>The Cambridge Apportionment Meeting recommended the use of base $b = 5$, and the use of upwards
                         rounding.</p>
                 </section>
-                <section class="block1">
-                    <h2>References</h2>
+                <section class="block1" id="refs">
+                    <h2 id="refs">References</h2>
                     <p id="Gri12">[Gri12] <cite>G. R. Grimmett, European apportionment via the cambridge compromise,
                             Mathematical Social Sciences 63 (2012), no. 2, 68–73, Around the Cambridge Compromise:
                             Apportionment in Theory and Practice. </cite></p>

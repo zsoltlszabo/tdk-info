@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    <div class="sections visually-hidden-focusable">
+        <a href="#content">Jump to main content</a>
+        <a href="#eu_non_deg">First section: Adaptation of the method to the European Union without degressive proportionality</a>
+        <a href="#eu_deg">Second section: Adaptation of the method to the European Union with degressive proportionality</a>
+        <a href="#refs">Third section: References</a>
+    </div>
     <a href="#content" class="visually-hidden-focusable">Jump to content</a>
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
@@ -64,7 +70,7 @@
         </h1>
         <article>
             <div class="noncontainer">
-                <section class="block1">
+                <section class="block1" id="eu_non_deg">
                     <p>There are two approaches we can take when adapting Huntington's method. </p>
                     <p>The first is to completely ignore the principle of degressive proportionality and give every
                         state
@@ -115,11 +121,11 @@
                         majority.
                     </p>
                 </section>
-                <section class="block2">
+                <section class="block2" id="eu_deg">
                     <h2>Keeping degressive proportionality</h2>
                     <p>We will use a version of the Python code modified according to the guidelines in [<a
                             href="#Gri12">Gri12</a>, Page 3]. The
-                        code along with a full, line-by-line explanation can be found in section 4.2. Using census data
+                        code along with a full, line-by-line explanation can be found in section 4.2 of the paper. Using census data
                         from
                         2011 from across the European Union, we have arrived at the following composition using the
                         different
@@ -146,7 +152,7 @@
                         were the biggest losers of our system. They lost seats at the expense of larger states. </p>
                     table!!!!
                 </section>
-                <section class="block1">
+                <section class="block1" id="refs">
                     <h2>References</h2>
                     <p id="Gri12">[Gri12] <cite>G. R. Grimmett, European apportionment via the cambridge compromise,
                             Mathematical Social Sciences 63 (2012), no. 2, 68–73, Around the Cambridge Compromise:

@@ -14,7 +14,12 @@
 </head>
 
 <body>
-  <a href="#content" class="visually-hidden-focusable">Jump to content</a>
+  <div class="sections visually-hidden-focusable">
+    <a href="#content">Jump to main content</a>
+    <a href="#paper">First section: About the paper</a>
+    <a href="#author">Second section: About the author</a>
+    <a href="#future">Third section: The future of the research</a>
+  </div>
   <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">TDK Info</a>
@@ -62,7 +67,7 @@
 
     <div class="container">
       <div class="row">
-        <section class="block1 col-12 col-lg-4">
+        <section class="block1 col-12 col-lg-4" id="paper">
           <h2>About the paper</h2>
           <p>
             This paper is the first step in my research into electoral and
@@ -144,7 +149,7 @@
             research.
           </p>
         </section>
-        <section class="block1 col-12 col-lg-4">
+        <section class="block1 col-12 col-lg-4" id="author">
           <h2>About the author</h2>
           <img class="float-end ms-3" src="img/portrait.jpeg" alt="A portrait of the author" />
           <p>
@@ -181,7 +186,7 @@
             student by the Mayor of Tatabánya.
           </p>
         </section>
-        <section class="block1 col-12 col-lg-4">
+        <section class="block1 col-12 col-lg-4" id="future">
           <h2>The future of the research</h2>
           <a href="img/award.jpg" target="_blank" rel="noopener noreferrer">
             <img class="float-end ms-3 img-thumbnail home-thumbnail" src="img/award.jpg"

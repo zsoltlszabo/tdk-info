@@ -191,7 +191,7 @@ caption {
 }
 
 @media print {
-    nav, footer, video {
+    nav, footer, video, details {
         display: none !important;
     }
 
